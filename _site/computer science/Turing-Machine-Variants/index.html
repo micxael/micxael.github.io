@@ -1,0 +1,696 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Turing Machine Variants - Michael Park</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Michael Park">
+<meta property="og:title" content="Turing Machine Variants">
+
+
+  <link rel="canonical" href="http://localhost:4000/computer%20science/Turing-Machine-Variants/">
+  <meta property="og:url" content="http://localhost:4000/computer%20science/Turing-Machine-Variants/">
+
+
+
+  <meta property="og:description" content="Formal Methods course material adapted by Dr. Arjun Chandrasekhar">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2022-10-29T12:11:00-07:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Michael Park",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Michael Park Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Michael Park</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/">Blog Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/about/">About</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="http://localhost:4000/images/profile.png" class="author__avatar" alt="Michael Park">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Michael Park</h3>
+    <p class="author__bio">I'm a Master's student in Computer Science at the University of Southern California. My research area focuses on robust Representation Learning in various domains, CV/NLP/RL.</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Los Angeles, CA</li>
+      
+      
+      
+      
+        <li><a href="mailto:micpa1104@gmail.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+       
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/micxael"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/micxael"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Turing Machine Variants">
+    <meta itemprop="description" content="Formal Methods course material adapted by Dr. Arjun Chandrasekhar">
+    <meta itemprop="datePublished" content="October 29, 2022">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Turing Machine Variants
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+          
+        
+        
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-10-29T12:11:00-07:00">October 29, 2022</time></p>
+        
+        
+             
+        
+    
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p><a href="https://www.arjun-chandrasekhar-teaching.com/teaching">Formal Methods</a> course material adapted by Dr. Arjun Chandrasekhar</p>
+
+<iframe width="120%" height="900px" src="/files/discrete_math/5-Turing-Machine-Variants.pdf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#formal-methods" class="page__taxonomy-item" rel="tag">Formal Methods</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/#computer-science" class="page__taxonomy-item" rel="tag">Computer Science</a>
+    
+    </span>
+  </p>
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/computer%20science/Turing-Machine-Variants/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/computer%20science/Turing-Machine-Variants/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/computer%20science/Turing-Machine-Variants/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/computer%20science/Turing-Machines/" class="pagination--pager" title="Turing Machines
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/computer%20science/Recursively-Enumerable-Languages/" class="pagination--pager" title="Recursively Enumerable Languages
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/gail/" rel="permalink">Generative Adversarial Imitation Learning (GAIL)
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-09-29T13:00:00-07:00">September 29, 2023</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><iframe width="120%" height="900px" src="/files/gail.pdf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/USC-QNLP/" rel="permalink">USC QNLP
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-11-30T12:00:00-08:00">November 30, 2022</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p><strong>QNLP</strong> is a nascent field of research which deals with quantum computers to solve NLP problems.
+Our group has been working on the design and implementation of NLP models intended to be run on quantum hardware, along with literature review</p>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/computer%20science/Syntax-Tree-Node-Types/" rel="permalink">Syntax Tree Node Types
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  3 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-11-06T18:45:00-08:00">November 06, 2022</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><table>
+  <thead>
+    <tr>
+      <th>Node</th>
+      <th style="text-align: center">Descriptions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>S</strong> (sentence)</td>
+      <td style="text-align: center">a syntactic unit that consists of one or more clauses, contains a subject and a predicate, and expresses a proposition</td>
+    </tr>
+    <tr>
+      <td><strong>NP</strong> (noun phrase)</td>
+      <td style="text-align: center">a phrase composed of a noun as its head and the optional modifiers and determiners of the noun; alternatively may be composed of a single pronoun</td>
+    </tr>
+    <tr>
+      <td><strong>VP</strong> (verb phrase)</td>
+      <td style="text-align: center">a phrase composed of a verb as its head and including all the dependents of the verb, such as direct and indirect objects, adverbials, and subject complements</td>
+    </tr>
+    <tr>
+      <td><strong>AdjP</strong> (adjective phrase)</td>
+      <td style="text-align: center">a phrase composed of an adjective as its head and the optional modifiers of the adjective; serves as a modifier of noun phrases</td>
+    </tr>
+    <tr>
+      <td><strong>AdvP</strong> (adverb phrase)</td>
+      <td style="text-align: center">a phrase composed of an adverb as its head and optional modifiers of the adverb; serves as a modifier of a verb or a clause</td>
+    </tr>
+    <tr>
+      <td><strong>PP</strong> (prepositional phrase)</td>
+      <td style="text-align: center">a phrase composed of a preposition and its required complement, which must be a noun phrase</td>
+    </tr>
+    <tr>
+      <td><strong>N</strong> (noun)</td>
+      <td style="text-align: center">any member of a class of words refer to people, objects, concepts, and ideas; can be inflected number, gender, and/or case; serves as the subject of a clause or an object of a verb or preposition</td>
+    </tr>
+    <tr>
+      <td><strong>V</strong> (verb)</td>
+      <td style="text-align: center">a member of the word class that expresses actions or events; can be inflected for tense, aspect, mood, etc. functions as the main word in the predicate of a clause</td>
+    </tr>
+    <tr>
+      <td><strong>DET</strong> (determiner)</td>
+      <td style="text-align: center">a word (such as an article, possessive, demonstrative, or quantifier) that expresses the reference, including specificity and quantity, of a noun phrase</td>
+    </tr>
+    <tr>
+      <td><strong>pro</strong> (pronoun)</td>
+      <td style="text-align: center">a member of the functional word class that functions like a noun and can substitute for a noun phrase in a clause</td>
+    </tr>
+    <tr>
+      <td><strong>ADJ</strong> (adjective)</td>
+      <td style="text-align: center">a member of the word class whose function is to specify the properties and attributes of a noun it modifies</td>
+    </tr>
+    <tr>
+      <td><strong>ADV</strong> (adverb)</td>
+      <td style="text-align: center">a member of the word class whose function is to modify such properties of verbs and clauses as time, place, manner, attitude, purpose, etc</td>
+    </tr>
+    <tr>
+      <td><strong>DEG</strong> (degree word)</td>
+      <td style="text-align: center">typically, an adverb whose function is to modify the head of an adjective or adverb phrase; “very” is a canonical degree word</td>
+    </tr>
+    <tr>
+      <td><strong>P</strong> (preposition)</td>
+      <td style="text-align: center">a word that precedes noun phrases and expresses the relationship between this noun phrase and another element of the clause</td>
+    </tr>
+    <tr>
+      <td><strong>CONJ</strong> (conjunction)</td>
+      <td style="text-align: center">a word that syntactically links words or larger constituents and expresses a semantic relationship between them <br /><strong>COOR</strong> (Coordinating conjunction) - links words or larger constituents of equal syntactic value  <br /> <strong>SUBORD</strong> (Subordinating conjunction) - links clauses in such a manner that one of them becomes a constituent of another</td>
+    </tr>
+    <tr>
+      <td><strong>COMP</strong> (complementizer)</td>
+      <td style="text-align: center">a conjunction that marks a complement or subordinate clause</td>
+    </tr>
+    <tr>
+      <td><strong>TNS</strong> (Tense)</td>
+      <td style="text-align: center">a verbal category that deictically refers to the time of the action or event expressed in the verb</td>
+    </tr>
+    <tr>
+      <td><strong>PERF</strong> (Perfect Aspect)</td>
+      <td style="text-align: center">a verbal category, and indicating that the action or event expressed by the said verb occurs prior to a specific point in time</td>
+    </tr>
+    <tr>
+      <td><strong>AUX</strong> (Auxiliary (verb))</td>
+      <td style="text-align: center">a functional verbal category that accompanies a lexical verb and expresses grammatical distinctions not carried by the said verb, such as tense, aspect, person, number, mood, etc</td>
+    </tr>
+  </tbody>
+</table>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/computer%20science/cronkgqa/" rel="permalink">CronKGQA
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  less than 1 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2022-10-30T11:49:00-07:00">October 30, 2022</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p><a href="https://arxiv.org/abs/2106.01515"><strong>Paper</strong></a> by Saxena et al. in 2021</p>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/micxael"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Michael Park. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

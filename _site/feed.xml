@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-26T13:59:55-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Michael Park</title><subtitle>Personal Description</subtitle><author><name>Michael Park</name><email>micpa1104@gmail.com</email></author><entry><title type="html">Generative Adversarial Imitation Learning (GAIL)</title><link href="http://localhost:4000/gail/" rel="alternate" type="text/html" title="Generative Adversarial Imitation Learning (GAIL)" /><published>2023-09-29T13:00:00-07:00</published><updated>2023-09-29T13:00:00-07:00</updated><id>http://localhost:4000/gail</id><content type="html" xml:base="http://localhost:4000/gail/">&lt;iframe width=&quot;120%&quot; height=&quot;900px&quot; src=&quot;/files/gail.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Michael</name></author><summary type="html"></summary></entry><entry><title type="html">USC QNLP</title><link href="http://localhost:4000/USC-QNLP/" rel="alternate" type="text/html" title="USC QNLP" /><published>2022-11-30T12:00:00-08:00</published><updated>2022-11-30T12:00:00-08:00</updated><id>http://localhost:4000/USC-QNLP</id><content type="html" xml:base="http://localhost:4000/USC-QNLP/">&lt;p&gt;&lt;strong&gt;QNLP&lt;/strong&gt; is a nascent field of research which deals with quantum computers to solve NLP problems.
+Our group has been working on the design and implementation of NLP models intended to be run on quantum hardware, along with literature review&lt;/p&gt;
+
+&lt;iframe width=&quot;120%&quot; height=&quot;550px&quot; src=&quot;/files/lambeq_presentation.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;120%&quot; height=&quot;550px&quot; src=&quot;/files/Quantum_Boltzmann_Machine.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;-usc-qnlp-&quot;&gt;&amp;lt; USC QNLP &amp;gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;advisors&quot;&gt;Advisors&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mitch Paul Mithun&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;graduate-students&quot;&gt;Graduate Students&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Michael Park&lt;/li&gt;
+  &lt;li&gt;Pasha Biglarzadeh&lt;/li&gt;
+  &lt;li&gt;Sofian Ghazali&lt;/li&gt;
+  &lt;li&gt;Swaraj Vatsa&lt;/li&gt;
+  &lt;li&gt;Vignesh Selvaraj&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;undergraduate-students&quot;&gt;Undergraduate Students&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Anish Kushalapa&lt;/li&gt;
+  &lt;li&gt;Dennis Hu&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Michael</name></author><summary type="html">QNLP is a nascent field of research which deals with quantum computers to solve NLP problems. Our group has been working on the design and implementation of NLP models intended to be run on quantum hardware, along with literature review</summary></entry><entry><title type="html">Syntax Tree Node Types</title><link href="http://localhost:4000/computer%20science/Syntax-Tree-Node-Types/" rel="alternate" type="text/html" title="Syntax Tree Node Types" /><published>2022-11-06T18:45:00-08:00</published><updated>2022-11-06T18:45:00-08:00</updated><id>http://localhost:4000/computer%20science/Syntax-Tree-Node-Types</id><content type="html" xml:base="http://localhost:4000/computer%20science/Syntax-Tree-Node-Types/">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Node&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Descriptions&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;S&lt;/strong&gt; (sentence)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a syntactic unit that consists of one or more clauses, contains a subject and a predicate, and expresses a proposition&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;NP&lt;/strong&gt; (noun phrase)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a phrase composed of a noun as its head and the optional modifiers and determiners of the noun; alternatively may be composed of a single pronoun&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;VP&lt;/strong&gt; (verb phrase)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a phrase composed of a verb as its head and including all the dependents of the verb, such as direct and indirect objects, adverbials, and subject complements&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;AdjP&lt;/strong&gt; (adjective phrase)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a phrase composed of an adjective as its head and the optional modifiers of the adjective; serves as a modifier of noun phrases&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;AdvP&lt;/strong&gt; (adverb phrase)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a phrase composed of an adverb as its head and optional modifiers of the adverb; serves as a modifier of a verb or a clause&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;PP&lt;/strong&gt; (prepositional phrase)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a phrase composed of a preposition and its required complement, which must be a noun phrase&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;N&lt;/strong&gt; (noun)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;any member of a class of words refer to people, objects, concepts, and ideas; can be inflected number, gender, and/or case; serves as the subject of a clause or an object of a verb or preposition&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;V&lt;/strong&gt; (verb)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a member of the word class that expresses actions or events; can be inflected for tense, aspect, mood, etc. functions as the main word in the predicate of a clause&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;DET&lt;/strong&gt; (determiner)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a word (such as an article, possessive, demonstrative, or quantifier) that expresses the reference, including specificity and quantity, of a noun phrase&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;pro&lt;/strong&gt; (pronoun)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a member of the functional word class that functions like a noun and can substitute for a noun phrase in a clause&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;ADJ&lt;/strong&gt; (adjective)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a member of the word class whose function is to specify the properties and attributes of a noun it modifies&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;ADV&lt;/strong&gt; (adverb)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a member of the word class whose function is to modify such properties of verbs and clauses as time, place, manner, attitude, purpose, etc&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;DEG&lt;/strong&gt; (degree word)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;typically, an adverb whose function is to modify the head of an adjective or adverb phrase; “very” is a canonical degree word&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;P&lt;/strong&gt; (preposition)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a word that precedes noun phrases and expresses the relationship between this noun phrase and another element of the clause&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;CONJ&lt;/strong&gt; (conjunction)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a word that syntactically links words or larger constituents and expresses a semantic relationship between them &lt;br /&gt;&lt;strong&gt;COOR&lt;/strong&gt; (Coordinating conjunction) - links words or larger constituents of equal syntactic value  &lt;br /&gt; &lt;strong&gt;SUBORD&lt;/strong&gt; (Subordinating conjunction) - links clauses in such a manner that one of them becomes a constituent of another&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;COMP&lt;/strong&gt; (complementizer)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a conjunction that marks a complement or subordinate clause&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;TNS&lt;/strong&gt; (Tense)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a verbal category that deictically refers to the time of the action or event expressed in the verb&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;PERF&lt;/strong&gt; (Perfect Aspect)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a verbal category, and indicating that the action or event expressed by the said verb occurs prior to a specific point in time&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;AUX&lt;/strong&gt; (Auxiliary (verb))&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;a functional verbal category that accompanies a lexical verb and expresses grammatical distinctions not carried by the said verb, such as tense, aspect, person, number, mood, etc&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://elearning.cpp.edu/learning-objects/syntactic-tree-structures/&quot;&gt;&lt;strong&gt;source&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael</name></author><category term="Computer Science" /><category term="ML" /><summary type="html">Node Descriptions S (sentence) a syntactic unit that consists of one or more clauses, contains a subject and a predicate, and expresses a proposition NP (noun phrase) a phrase composed of a noun as its head and the optional modifiers and determiners of the noun; alternatively may be composed of a single pronoun VP (verb phrase) a phrase composed of a verb as its head and including all the dependents of the verb, such as direct and indirect objects, adverbials, and subject complements AdjP (adjective phrase) a phrase composed of an adjective as its head and the optional modifiers of the adjective; serves as a modifier of noun phrases AdvP (adverb phrase) a phrase composed of an adverb as its head and optional modifiers of the adverb; serves as a modifier of a verb or a clause PP (prepositional phrase) a phrase composed of a preposition and its required complement, which must be a noun phrase N (noun) any member of a class of words refer to people, objects, concepts, and ideas; can be inflected number, gender, and/or case; serves as the subject of a clause or an object of a verb or preposition V (verb) a member of the word class that expresses actions or events; can be inflected for tense, aspect, mood, etc. functions as the main word in the predicate of a clause DET (determiner) a word (such as an article, possessive, demonstrative, or quantifier) that expresses the reference, including specificity and quantity, of a noun phrase pro (pronoun) a member of the functional word class that functions like a noun and can substitute for a noun phrase in a clause ADJ (adjective) a member of the word class whose function is to specify the properties and attributes of a noun it modifies ADV (adverb) a member of the word class whose function is to modify such properties of verbs and clauses as time, place, manner, attitude, purpose, etc DEG (degree word) typically, an adverb whose function is to modify the head of an adjective or adverb phrase; “very” is a canonical degree word P (preposition) a word that precedes noun phrases and expresses the relationship between this noun phrase and another element of the clause CONJ (conjunction) a word that syntactically links words or larger constituents and expresses a semantic relationship between them COOR (Coordinating conjunction) - links words or larger constituents of equal syntactic value SUBORD (Subordinating conjunction) - links clauses in such a manner that one of them becomes a constituent of another COMP (complementizer) a conjunction that marks a complement or subordinate clause TNS (Tense) a verbal category that deictically refers to the time of the action or event expressed in the verb PERF (Perfect Aspect) a verbal category, and indicating that the action or event expressed by the said verb occurs prior to a specific point in time AUX (Auxiliary (verb)) a functional verbal category that accompanies a lexical verb and expresses grammatical distinctions not carried by the said verb, such as tense, aspect, person, number, mood, etc</summary></entry><entry><title type="html">CronKGQA</title><link href="http://localhost:4000/computer%20science/cronkgqa/" rel="alternate" type="text/html" title="CronKGQA" /><published>2022-10-30T11:49:00-07:00</published><updated>2022-10-30T11:49:00-07:00</updated><id>http://localhost:4000/computer%20science/cronkgqa</id><content type="html" xml:base="http://localhost:4000/computer%20science/cronkgqa/">&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2106.01515&quot;&gt;&lt;strong&gt;Paper&lt;/strong&gt;&lt;/a&gt; by Saxena et al. in 2021&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/apoorvumang/CronKGQA&quot;&gt;&lt;strong&gt;Code&lt;/strong&gt;&lt;/a&gt; on Github&lt;/p&gt;
+
+&lt;iframe width=&quot;120%&quot; height=&quot;900px&quot; src=&quot;/files/cronkgqa.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Michael</name></author><category term="Computer Science" /><category term="ML" /><category term="Knowledge Graphs" /><summary type="html">Paper by Saxena et al. in 2021</summary></entry><entry><title type="html">The Recursion Theorem</title><link href="http://localhost:4000/computer%20science/The-Recursion-Theorem/" rel="alternate" type="text/html" title="The Recursion Theorem" /><published>2022-10-29T12:30:00-07:00</published><updated>2022-10-29T12:30:00-07:00</updated><id>http://localhost:4000/computer%20science/The-Recursion-Theorem</id><content type="html" xml:base="http://localhost:4000/computer%20science/The-Recursion-Theorem/">&lt;p&gt;&lt;a href=&quot;https://www.arjun-chandrasekhar-teaching.com/teaching&quot;&gt;Formal Methods&lt;/a&gt; course material adapted by Dr. Arjun Chandrasekhar&lt;/p&gt;
+
+&lt;iframe width=&quot;120%&quot; height=&quot;900px&quot; src=&quot;/files/discrete_math/13-The-Recursion-Theorem.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Michael</name></author><category term="Computer Science" /><category term="Formal Methods" /><summary type="html">Formal Methods course material adapted by Dr. Arjun Chandrasekhar</summary></entry><entry><title type="html">Mapping Reductions</title><link href="http://localhost:4000/computer%20science/Mapping-Reductions/" rel="alternate" type="text/html" title="Mapping Reductions" /><published>2022-10-29T12:28:00-07:00</published><updated>2022-10-29T12:28:00-07:00</updated><id>http://localhost:4000/computer%20science/Mapping-Reductions</id><content type="html" xml:base="http://localhost:4000/computer%20science/Mapping-Reductions/">&lt;p&gt;&lt;a href=&quot;https://www.arjun-chandrasekhar-teaching.com/teaching&quot;&gt;Formal Methods&lt;/a&gt; course material adapted by Dr. Arjun Chandrasekhar&lt;/p&gt;
+
+&lt;iframe width=&quot;120%&quot; height=&quot;900px&quot; src=&quot;/files/discrete_math/12-Mapping-Reductions.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Michael</name></author><category term="Computer Science" /><category term="Formal Methods" /><summary type="html">Formal Methods course material adapted by Dr. Arjun Chandrasekhar</summary></entry><entry><title type="html">Turing Reductions and Undecidability</title><link href="http://localhost:4000/computer%20science/Turing-Reductions-and-Undecidability/" rel="alternate" type="text/html" title="Turing Reductions and Undecidability" /><published>2022-10-29T12:27:00-07:00</published><updated>2022-10-29T12:27:00-07:00</updated><id>http://localhost:4000/computer%20science/Turing-Reductions-and-Undecidability</id><content type="html" xml:base="http://localhost:4000/computer%20science/Turing-Reductions-and-Undecidability/">&lt;p&gt;&lt;a href=&quot;https://www.arjun-chandrasekhar-teaching.com/teaching&quot;&gt;Formal Methods&lt;/a&gt; course material adapted by Dr. Arjun Chandrasekhar&lt;/p&gt;
+
+&lt;iframe width=&quot;120%&quot; height=&quot;900px&quot; src=&quot;/files/discrete_math/11-Turing-Reductions-and-Undecidability.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Michael</name></author><category term="Computer Science" /><category term="Formal Methods" /><summary type="html">Formal Methods course material adapted by Dr. Arjun Chandrasekhar</summary></entry><entry><title type="html">The Halting Problem</title><link href="http://localhost:4000/computer%20science/The-Halting-Problem/" rel="alternate" type="text/html" title="The Halting Problem" /><published>2022-10-29T12:26:00-07:00</published><updated>2022-10-29T12:26:00-07:00</updated><id>http://localhost:4000/computer%20science/The-Halting-Problem</id><content type="html" xml:base="http://localhost:4000/computer%20science/The-Halting-Problem/">&lt;p&gt;&lt;a href=&quot;https://www.arjun-chandrasekhar-teaching.com/teaching&quot;&gt;Formal Methods&lt;/a&gt; course material adapted by Dr. Arjun Chandrasekhar&lt;/p&gt;
+
+&lt;iframe width=&quot;120%&quot; height=&quot;900px&quot; src=&quot;/files/discrete_math/10-The-Halting-Problem.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Michael</name></author><category term="Computer Science" /><category term="Formal Methods" /><summary type="html">Formal Methods course material adapted by Dr. Arjun Chandrasekhar</summary></entry><entry><title type="html">Countability and Diagonalization</title><link href="http://localhost:4000/computer%20science/Countability-and-Diagonalization/" rel="alternate" type="text/html" title="Countability and Diagonalization" /><published>2022-10-29T12:25:00-07:00</published><updated>2022-10-29T12:25:00-07:00</updated><id>http://localhost:4000/computer%20science/Countability-and-Diagonalization</id><content type="html" xml:base="http://localhost:4000/computer%20science/Countability-and-Diagonalization/">&lt;p&gt;&lt;a href=&quot;https://www.arjun-chandrasekhar-teaching.com/teaching&quot;&gt;Formal Methods&lt;/a&gt; course material adapted by Dr. Arjun Chandrasekhar&lt;/p&gt;
+
+&lt;iframe width=&quot;120%&quot; height=&quot;900px&quot; src=&quot;/files/discrete_math/9-Countability-and-Diagonalization.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Michael</name></author><category term="Computer Science" /><category term="Formal Methods" /><summary type="html">Formal Methods course material adapted by Dr. Arjun Chandrasekhar</summary></entry><entry><title type="html">Turing-Decidable Languages</title><link href="http://localhost:4000/computer%20science/Turing-Decidable-Languages/" rel="alternate" type="text/html" title="Turing-Decidable Languages" /><published>2022-10-29T12:24:00-07:00</published><updated>2022-10-29T12:24:00-07:00</updated><id>http://localhost:4000/computer%20science/Turing-Decidable-Languages</id><content type="html" xml:base="http://localhost:4000/computer%20science/Turing-Decidable-Languages/">&lt;p&gt;&lt;a href=&quot;https://www.arjun-chandrasekhar-teaching.com/teaching&quot;&gt;Formal Methods&lt;/a&gt; course material adapted by Dr. Arjun Chandrasekhar&lt;/p&gt;
+
+&lt;iframe width=&quot;120%&quot; height=&quot;900px&quot; src=&quot;/files/discrete_math/8-Turing-Decidable-Languages.pdf&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Michael</name></author><category term="Computer Science" /><category term="Formal Methods" /><summary type="html">Formal Methods course material adapted by Dr. Arjun Chandrasekhar</summary></entry></feed>
