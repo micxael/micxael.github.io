@@ -80,10 +80,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Michael Park"
+  name             : # "Michael Park"
   avatar           : "profile.png"
-  bio              : "I'm a Master's student in Computer Science at the University of Southern California. My research area focuses on robust Representation Learning in various domains, CV/NLP/RL."
-  location         : "Los Angeles, CA"
+  bio              : "I'm a Machine Learning Engineer for TikTok working on recommendation systems."
+  location         : "San Francisco Bay Area, CA"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"

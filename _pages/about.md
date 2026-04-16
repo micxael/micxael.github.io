@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-Hello! My name is Michael, and I'm an aspiring Machine Learning Scientist.
+Hello! I'm Michael, a Computer Scientist and Machine Learning Engineer.
 
-Currently, I'm a Master's student in Computer Science at the University of Southern California. My research area focuses on robust Representation Learning in various domains, CV/NLP/RL. In my free time, I follow up on F1 and listen to podcasts.
+I completed my Master’s in Computer Science at the University of Southern California, where my research focused on robust representation learning and its applications across computer vision, natural language processing, and reinforcement learning.
+
+Outside of work, I keep up with Formula 1 and enjoy listening to podcasts.
