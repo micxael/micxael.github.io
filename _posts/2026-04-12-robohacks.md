@@ -62,7 +62,7 @@ To resolve this, I overhauled the policy memory lifecycle within `manipulation_s
 ### Looking Forward
 RoboHacks '26 demonstrated that the future of robotics isn't just about having great hardware; it's about building intelligent, harnessed, memory-efficient software and reliable simulation pipelines to bridge the gap between complex ML models and the physical world.
 
-A huge shoutout to Innate for providing the amazing MARS robots and to Y Combinator & Deepmind for hosting such a stellar event. Also, special thanks @YC @DeepMind @NASA @ElevenLabs @Axel Peytavin & everyone else for all the support! The robotics sandbox is wide open, and I'm excited to see where these robotics capabilities go next.
+A huge shoutout to @Innate for providing the amazing MARS robots and to @Y Combinator & @Google Deepmind for hosting such a stellar event. Also, special thanks @NASA @ElevenLabs @Axel Peytavin & everyone else for all the support! The robotics sandbox is wide open, and I'm excited to see where these robotics capabilities go next.
 
 ---
 
